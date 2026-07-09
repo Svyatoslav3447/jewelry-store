@@ -14,9 +14,9 @@ export default function Contacts() {
         <div className="bg-white p-6 rounded-2xl shadow-lg space-y-3">
           <h2 className="text-2xl font-semibold text-purple-700">Телефони:</h2>
           <ul className="list-disc list-inside text-gray-700 text-lg space-y-1">
-            <li>Vodafone: <a href="tel:+380996247225" className="text-blue-600 hover:underline">+380996247225</a></li>
-            <li>Київстар: <a href="tel:+380682128618" className="text-blue-600 hover:underline">+380682128618</a></li>
-            <li>Київстар: <a href="tel:+380682516511" className="text-blue-600 hover:underline">+380682516511</a></li>
+            <li>Vodafone: <a href="tel:+380996247225" className="text-blue-600 hover:underline">+380996247275</a></li>
+            <li>Київстар: <a href="tel:+380682128618" className="text-blue-600 hover:underline">+380682128688</a></li>
+            <li>Київстар: <a href="tel:+380682516511" className="text-blue-600 hover:underline">+380682516591</a></li>
           </ul>
         </div>
 
