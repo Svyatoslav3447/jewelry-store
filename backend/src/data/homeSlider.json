@@ -1,0 +1,17 @@
+[
+  {
+    "id": 2,
+    "title": "Вітаємо",
+    "image": "/images/slider/slider2.webp"
+  },
+  {
+    "id": 3,
+    "title": "Система знижок",
+    "image": "/images/slider/slider3.webp"
+  },
+  {
+    "id": 4,
+    "title": "Графік",
+    "image": "/images/slider/slider4.webp"
+  }
+]
