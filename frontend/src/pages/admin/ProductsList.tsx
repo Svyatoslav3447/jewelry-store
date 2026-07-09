@@ -7,18 +7,14 @@ export default function ProductsList() {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Для модалки редагування
   const [editingProduct, setEditingProduct] = useState<Product | null>(null);
   const [confirmDelete, setConfirmDelete] = useState<Product | null>(null);
 
-  // Для пошуку
   const [search, setSearch] = useState("");
 
   const [page, setPage] = useState(1);
   const [perPage] = useState(20);
   const [totalPages, setTotalPages] = useState(1);
-
-  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || window.location.origin;
 
   const fetchProducts = async (pageNum = 1) => {
     try {
@@ -85,7 +81,6 @@ export default function ProductsList() {
     <div className="max-w-7xl mx-auto p-6 space-y-6">
       <h1 className="text-3xl font-bold mb-4">Список товарів</h1>
 
-      {/* Пошук */}
       <div className="mb-4 flex gap-2">
       <input
         type="text"
@@ -96,20 +91,12 @@ export default function ProductsList() {
       />
       <button
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-        onClick={handleSearch} // тепер кнопка запускає серверний пошук
+        onClick={handleSearch}
       >
         Знайти
       </button>
-
-
-
-
-
-
-
-
+        
       </div>
-
       {loading ? (
         <p>Завантаження...</p>
       ) : (
@@ -202,8 +189,6 @@ export default function ProductsList() {
           </div>
         </div>
       )}
-
-      {/* Модалки */}
       {editingProduct && (
         <EditProductModal
           product={editingProduct}
@@ -212,7 +197,6 @@ export default function ProductsList() {
             fetchProducts();
             setEditingProduct(null);
           }}
-          // передаємо параметри в модалку
           initialParameters={editingProduct.parameters || []}
         />
       )}
