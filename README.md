@@ -92,8 +92,3 @@ npm run build
 3) CORS / CLIENT_URL
 - У `backend/src/main.ts` встановлено CORS з `origin: process.env.CLIENT_URL`. Тому встановіть `CLIENT_URL` на URL вашого фронтенду.
 
-## Швидкі поради
-
-- Помилка на Render `Publish directory .dist does not exist` означає, що в налаштуваннях вказано `.dist` з крапкою — має бути `dist` або `frontend/dist`.
-- Якщо хочете IaC, можна додати `render.yaml` (можу згенерувати за потреби).
-
